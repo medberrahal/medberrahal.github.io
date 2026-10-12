@@ -1,23 +1,20 @@
 ---
 layout: single
 header:
-  overlay_image: /assets/images/banner-010.jpg
+  overlay_image: /assets/images/banner-012.jpg
   overlay_filter: 0.6
-#  classes: wide
-
 toc: true
 toc_depth: 6
 toc_label: Table of Contents
-last_modified_at: 2026-01-02T10:53:00+01:00
+last_modified_at: 2025-10-10T10:10:10+00:00
 categories:
-  - Homelab
+  - categorie1
+  - categorie2
+
 tags:
-  - ransomware
-  - DFIR
-  - Windows
-  - SecDojo
-  - Powershell
-  - CTF
+  - tag1
+  - tag2
+  - tag3
 ---
 
 # Ransomware101: DFIR Lab Notes
