@@ -15,14 +15,14 @@ remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "fr-MA"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Hex & Logs"
+title                    : "Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Mohammed Berrahal"
-description              : "An amazing website."
-url                      : "https://uzaaz.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Ma Portfolio"
+url                      : "https://medberrahal.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -107,56 +107,56 @@ social:
 # Analytics
 analytics:
   provider             : "google-gtag" # false (default), "", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id        : "G-HKCHVDX2EV"
+#  google:
+#    tracking_id        : "G-HKCHVDX2EV"
     anonymize_ip       : false # true, false (default)
 
 
 # Site Author
 author:
-  name             : "Hamza M."
+  name             : "Mohammed Berrahal"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Welcome to the **iron mountain**; secrets evaporate here."
+  bio              : "Bienvenu sur ma personnel page."
   location         : "Morocco"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:mgh.hamza@gmail.com"
+      # url: "mailto:berrahalmohammed@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://uzaaz.github.io"
+      url: "https://medberrahal.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-x-twitter"
-      url: "https://x.com/Hamza_Mgh"
+      url: "https://x.com/"
     - label: "linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/hamzamaghraoui/"
+      url: "https://www.linkedin.com/in/mohammed-berrahal/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/uzaaz/"
+      url: "https://github.com/medberrahal/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/hmz_mgh/"
+      # url: "https://instagram.com/"
     - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
-      # url: "https://youtube.com/@hexlogs"
+      # url: "https://youtube.com/"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-x-twitter"
-      url: "https://x.com/Hamza_Mgh/"
+      url: "https://x.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/uzaaz"
+      url: "https://github.com/medberrahal"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
