@@ -1,7 +1,25 @@
 ---
-title: "DFIR Lab Notes: Ransomware101 (SecDojo)"
-date: 2026-08-26
-tags: [DFIR, ransomware, windows, powershell, CTF, SecDojo]
+layout: single
+header:
+  overlay_filter: 0.6
+# classes: wide
+
+toc: true
+toc_label: "Table of Contents"
+# toc_icon: "cog"
+
+last_modified_at: 2026-10-12T10:20:26-04:00
+
+categories:
+  - tutorial
+tags:
+  - ransomware
+  - DFIR
+  - Windows
+  - SecDojo
+  - Powershell
+  - CTF
+
 ---
 
 # Ransomware101: DFIR Lab Notes
