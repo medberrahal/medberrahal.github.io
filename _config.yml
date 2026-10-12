@@ -105,8 +105,8 @@ social:
   links: # An array of links to social media profiles
 
 # Analytics
-analytics:
-  provider             : "google-gtag" # false (default), "", "google-universal", "google-gtag", "custom"
+# analytics:
+#  provider             : "google-gtag" # false (default), "", "google-universal", "google-gtag", "custom"
 #  google:
 #    tracking_id        : "G-HKCHVDX2EV"
     anonymize_ip       : false # true, false (default)
