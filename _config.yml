@@ -115,7 +115,7 @@ social:
 # Site Author
 author:
   name             : "Mohammed Berrahal"
-  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-01.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Bienvenu sur ma personnel page."
   location         : "Maroc"
   email            :
