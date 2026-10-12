@@ -6,15 +6,20 @@ header:
 toc: true
 toc_depth: 6
 toc_label: Table of Contents
-last_modified_at: 2025-10-10T10:10:10+00:00
+last_modified_at: 2026-08-26T10:10:10+00:00
 categories:
-  - categorie1
-  - categorie2
+  - DFIR
+  - Ransomware
 
 tags:
-  - tag1
-  - tag2
-  - tag3
+  - DFIR
+  - ransomware
+  - windows
+  - powershell
+  - CTF
+  - SecDojo
+  - forensics
+  - cryptography
 ---
 
 # Ransomware101: DFIR Lab Notes
