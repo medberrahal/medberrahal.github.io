@@ -117,7 +117,7 @@ author:
   name             : "Mohammed Berrahal"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Bienvenu sur ma personnel page."
-  location         : "Morocco"
+  location         : "Maroc"
   email            :
   links:
     - label: "Email"
