@@ -173,7 +173,7 @@ La bibliothèque contient plus de **500 apps préconfigurées**, incluant TheHiv
 
 ### 3.1 Schéma de l'architecture physique
 
-![Architecture globale du SOC : attaquant Kali, endpoint Windows 10 avec agent Wazuh, SIEM Wazuh, SOAR Shuffle](images/01-architecture-globale.png)
+<p align="center"><a href="/assets/images/01-architecture-globale.png"><img src="/assets/images/01-architecture-globale.png"></a></p>
 
 L'attaquant (Kali Linux) cible l'endpoint Windows 10 équipé de l'agent Wazuh. Les logs et alertes remontent vers le SIEM (Ubuntu-Wazuh), qui transmet les événements de sécurité au SOAR (Ubuntu-Shuffle) via webhook. Shuffle déclenche en retour une réponse automatisée (API/script) vers l'endpoint.
 
