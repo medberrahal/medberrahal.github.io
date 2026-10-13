@@ -177,7 +177,7 @@ La bibliothèque contient plus de **500 apps préconfigurées**, incluant TheHiv
 
 L'attaquant (Kali Linux) cible l'endpoint Windows 10 équipé de l'agent Wazuh. Les logs et alertes remontent vers le SIEM (Ubuntu-Wazuh), qui transmet les événements de sécurité au SOAR (Ubuntu-Shuffle) via webhook. Shuffle déclenche en retour une réponse automatisée (API/script) vers l'endpoint.
 
-![Schéma détaillé du workflow de détection et réponse, de l'attaque à l'enrichissement VirusTotal](images/02-workflow-detection-reponse.png)
+<p align="center"><a href="/assets/images/02-workflow-detection-reponse.jpg"><img src="/assets/images/02-workflow-detection-reponse.jpg"></a></p>
 
 Ce second schéma détaille les 5 étapes du workflow : attaque → détection → alerte → enrichissement (VirusTotal) → réponse automatisée.
 
@@ -206,8 +206,7 @@ curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
 chmod +x wazuh-install.sh
 sudo ./wazuh-install.sh -a
 ```
-
-![Log d'installation de Wazuh dans le terminal, manager, Filebeat et dashboard installés avec succès](images/03-wazuh-install-log.png)
+<p align="center"><a href="/assets/images/03-wazuh-install-log.png"><img src="/assets/images/03-wazuh-install-log.png"></a></p>
 
 > ℹ️ À la fin de l'installation, le script affiche aussi les identifiants du compte `admin` du Dashboard (nom d'utilisateur et mot de passe généré). Ce mot de passe a été retiré de la capture ci-dessus avant publication.
 
@@ -216,25 +215,23 @@ sudo ./wazuh-install.sh -a
 ```text
 https://192.168.223.129
 ```
+<p align="center"><a href="/assets/images/04-wazuh-login-page.png"><img src="/assets/images/04-wazuh-login-page.png"></a></p>
 
-![Page de connexion du Wazuh Dashboard](images/04-wazuh-login-page.png)
-
-![Vue d'ensemble du Dashboard Wazuh après connexion, aucun agent connecté](images/05-wazuh-dashboard-overview.png)
+<p align="center"><a href="/assets/images/05-wazuh-dashboard-overview.png"><img src="/assets/images/05-wazuh-dashboard-overview.png"></a></p>
 
 **Déploiement de l'agent sur Windows 10 :**
 
-![Assistant d'ajout d'agent Wazuh : sélection du package Windows et de l'adresse du serveur](images/06-wazuh-add-agent-wizard.png)
+<p align="center"><a href="/assets/images/06-wazuh-add-agent-wizard.png"><img src="/assets/images/06-wazuh-add-agent-wizard.png"></a></p>
 
 L'assistant du Dashboard génère automatiquement la commande PowerShell d'installation, avec l'adresse du Manager déjà renseignée :
 
-![Commande PowerShell générée par l'assistant pour installer l'agent Windows](images/07-wazuh-agent-install-command.png)
+<p align="center"><a href="/assets/images/07-wazuh-agent-install-command.png"><img src="/assets/images/07-wazuh-agent-install-command.png"></a></p>
 
 ```powershell
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.7.5-1.msi -OutFile ${env:tmp}\wazuh-agent; msiexec.exe /i ${env:tmp}\wazuh-agent /q WAZUH_MANAGER='192.168.223.129' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='windows10' WAZUH_REGISTRATION_SERVER='192.168.223.129'
 NET START WazuhSvc
 ```
-
-![Terminal PowerShell confirmant le démarrage réussi du service Wazuh sur Windows 10](images/08-wazuh-agent-powershell-success.png)
+<p align="center"><a href="/assets/images/08-wazuh-agent-powershell-success.png"><img src="/assets/images/08-wazuh-agent-powershell-success.png"></a></p>
 
 ### 3.4 Installation de Shuffle (SOAR)
 
@@ -263,7 +260,7 @@ cd Shuffle
 https://192.168.223.130:3443
 ```
 
-![Page de connexion de Shuffle](images/09-shuffle-login-page.png)
+<p align="center"><a href="/assets/images/09-shuffle-login-page.png"><img src="/assets/images/09-shuffle-login-page.png"></a></p>
 
 **Création du flux de travail :**
 
@@ -272,11 +269,11 @@ https://192.168.223.130:3443
 3. Sélectionner un cas d'utilisation et valider.
 4. Ajouter un déclencheur **Webhook**, nommé "Wazuh-alerte", et copier son URL.
 
-![Vue d'ensemble du workflow Shuffle "SOC-PFE" : webhook Wazuh-alerte connecté à un nœud d'enrichissement puis à VirusTotal](images/10-shuffle-workflow-overview.png)
+<p align="center"><a href="/assets/images/10-shuffle-workflow-overview.png"><img src="/assets/images/10-shuffle-workflow-overview.png"></a></p>
 
 Le nœud intermédiaire ("Change Me") exécute un petit script Python qui extrait l'adresse IP source de l'alerte JSON reçue :
 
-![Configuration du nœud Python intermédiaire du workflow, avec extraction de l'IP](images/11-shuffle-change-me-node.png)
+<p align="center"><a href="/assets/images/11-shuffle-change-me-node.png"><img src="/assets/images/11-shuffle-change-me-node.png"></a></p>
 
 **Intégration VirusTotal :**
 
@@ -284,7 +281,7 @@ Le nœud intermédiaire ("Change Me") exécute un petit script Python qui extrai
 2. Dans Shuffle, rechercher l'app **VirusTotal**, l'activer et la glisser dans le workflow.
 3. Configurer l'action VirusTotal (*Get an ip address report*) avec la clé API en authentification.
 
-![Configuration du nœud VirusTotal dans Shuffle, action "Get an ip address report"](images/12-shuffle-virustotal-node-config.png)
+<p align="center"><a href="/assets/images/12-shuffle-virustotal-node-config.png"><img src="/assets/images/12-shuffle-virustotal-node-config.png"></a></p>
 
 > ⚠️ **Non inclus :** la capture de la page "Ma clé API" de VirusTotal a été volontairement exclue de ces notes, car elle affiche une clé API réelle en clair ainsi que le nom du compte associé. Les clés API ne doivent jamais être publiées, même par capture d'écran.
 
@@ -294,7 +291,7 @@ Le nœud intermédiaire ("Change Me") exécute un petit script Python qui extrai
 sudo nano /var/ossec/etc/ossec.conf
 ```
 
-![Fichier ossec.conf ouvert dans nano, montrant le bloc d'intégration Shuffle](images/13-ossec-conf-integration.png)
+<p align="center"><a href="/assets/images/13-ossec-conf-integration.png"><img src="/assets/images/13-ossec-conf-integration.png"></a></p>
 
 ```xml
 <integration>
@@ -325,25 +322,25 @@ echo "=== Lancement de l'attaque brute force SMB ==="
 hydra -L users.txt -P passwords.txt 192.168.223.128 smb -V -t 1
 ```
 
-![Terminal Kali Linux dans VMware Workstation montrant le lancement de l'attaque Hydra contre le SMB de Windows 10](images/18-hydra-smb-bruteforce-launch.png)
+<p align="center"><a href="/assets/images/18-hydra-smb-bruteforce-launch.png"><img src="/assets/images/18-hydra-smb-bruteforce-launch.png"></a></p>
 
 ### 4.2 Analyse des résultats
 
 Dès la détection de l'attaque brute force, le mécanisme **Wazuh Active Response** se déclenche automatiquement et bloque l'adresse IP source.
 
-![Dashboard Wazuh "Security events" après l'attaque : 40 alertes, technique MITRE ATT&CK Brute Force, 2 agents concernés](images/14-wazuh-dashboard-after-attack.png)
+<p align="center"><a href="/assets/images/14-wazuh-dashboard-after-attack.png"><img src="/assets/images/14-wazuh-dashboard-after-attack.png"></a></p>
 
-![Table détaillée des alertes de sécurité : technique T1110, tactique Credential Access, règle 60204, niveau 10](images/15-wazuh-security-alerts-table.png)
+<p align="center"><a href="/assets/images/15-wazuh-security-alerts-table.png"><img src="/assets/images/15-wazuh-security-alerts-table.png"></a></p>
 
 Le détail JSON d'une alerte confirme l'origine de l'attaque et le protocole d'authentification ciblé (NTLM) :
 
-![Détail JSON d'une alerte Wazuh montrant l'IP source de l'attaquant et le protocole NTLM](images/16-wazuh-alert-detail-json-1.png)
+<p align="center"><a href="/assets/images/16-wazuh-alert-detail-json-1.png"><img src="/assets/images/16-wazuh-alert-detail-json-1.png"></a></p>
 
-![Suite du détail JSON de l'alerte, avec le port source et le type de logon](images/17-wazuh-alert-detail-json-2.png)
+<p align="center"><a href="/assets/images/17-wazuh-alert-detail-json-2.png"><img src="/assets/images/17-wazuh-alert-detail-json-2.png"></a></p>
 
 Lors d'une seconde tentative d'attaque, l'IP reste bloquée — même un ping vers Windows 10 échoue :
 
-![Terminal Kali montrant qu'un ping vers Windows 10 ne reçoit aucune réponse après le blocage de l'IP](images/19-ping-blocked-after-attack.png)
+<p align="center"><a href="/assets/images/19-ping-blocked-after-attack.png"><img src="/assets/images/19-ping-blocked-after-attack.png"></a></p>
 
 **Détection de l'incident (Wazuh) :**
 
