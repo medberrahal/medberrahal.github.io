@@ -1,6 +1,6 @@
 ---
 title: "Mise en place d'un SOC intelligent avec Wazuh + SOAR"
-date: 2025-01-10
+date: 2025-01-20
 categories: [SOC, Projet]
 tags: [wazuh, shuffle, soar, siem, active-response, mitre-attck, docker, brute-force, pfe]
 ---
