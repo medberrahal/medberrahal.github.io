@@ -1,4 +1,7 @@
 ---
+toc: true
+toc_depth: 6
+toc_label: Table of Contents
 title: "Mise en place d'un SOC intelligent avec Wazuh + SOAR"
 date: 2026-10-13
 categories: [SOC, Projet]
