@@ -11,7 +11,6 @@ tags: [wazuh, shuffle, soar, siem, active-response, mitre-attck, docker, hydra, 
 > **Auteur :** BERRAHAL Mohammed
 > **Type :** Projet de fin d'études (PFE)
 
-
 ## Résumé
 
 Face à l'évolution des cybermenaces, les entreprises doivent adopter des solutions de sécurité automatisées. Ce mémoire présente la conception d'un **Security Operations Center (SOC)** automatisé utilisant des technologies open source pour une détection et une réponse en temps réel aux incidents.
