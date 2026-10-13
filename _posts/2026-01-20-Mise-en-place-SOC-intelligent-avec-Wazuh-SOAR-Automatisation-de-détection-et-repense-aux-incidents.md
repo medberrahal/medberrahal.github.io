@@ -177,7 +177,7 @@ La bibliothèque contient plus de **500 apps préconfigurées**, incluant TheHiv
 
 L'attaquant (Kali Linux) cible l'endpoint Windows 10 équipé de l'agent Wazuh. Les logs et alertes remontent vers le SIEM (Ubuntu-Wazuh), qui transmet les événements de sécurité au SOAR (Ubuntu-Shuffle) via webhook. Shuffle déclenche en retour une réponse automatisée (API/script) vers l'endpoint.
 
-<p align="center"><a href="/assets/images/02-workflow-detection-reponse.jpg"><img src="/assets/images/02-workflow-detection-reponse.jpg"></a></p>
+<p align="center"><a href="/assets/images/02-workflow-detection-reponse.png"><img src="/assets/images/02-workflow-detection-reponse.png"></a></p>
 
 Ce second schéma détaille les 5 étapes du workflow : attaque → détection → alerte → enrichissement (VirusTotal) → réponse automatisée.
 
