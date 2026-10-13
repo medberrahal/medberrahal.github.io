@@ -1,8 +1,8 @@
 ---
 title: "Mise en place d'un SOC intelligent avec Wazuh + SOAR"
-date: 2025-01-20
+date: 2026-01-20
 categories: [SOC, Projet]
-tags: [wazuh, shuffle, soar, siem, active-response, mitre-attck, docker, brute-force, pfe]
+tags: [wazuh, shuffle, soar, siem, active-response, mitre-attck, docker, hydra, brute-force, pfe]
 ---
 
 # Mise en place d'un SOC intelligent avec Wazuh + SOAR
@@ -10,6 +10,7 @@ tags: [wazuh, shuffle, soar, siem, active-response, mitre-attck, docker, brute-f
 > **Sous-titre :** Automatisation de détection et réponse aux incidents
 > **Auteur :** BERRAHAL Mohammed
 > **Type :** Projet de fin d'études (PFE)
+
 
 ## Résumé
 
@@ -185,7 +186,20 @@ La bibliothèque contient plus de **500 apps préconfigurées**, incluant TheHiv
 
 ### 3.3 Installation de Wazuh
 
-Installation officielle, stable.
+**Préparation système :**
+
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y curl wget gnupg apt-transport-https unzip jq
+```
+
+**Installation officielle, stable :**
+
+```bash
+curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
+chmod +x wazuh-install.sh
+sudo ./wazuh-install.sh -a
+```
 
 **Accès au Dashboard :**
 
@@ -197,11 +211,24 @@ Déploiement de l'agent sur la machine Windows 10 pour collecte des logs et surv
 
 ### 3.4 Installation de Shuffle (SOAR)
 
-Étapes principales :
+**Mise à jour des paquets, installation de Docker et Docker Compose :**
 
-1. Mise à jour des paquets, installation de **Docker** et **Docker Compose**.
-2. Activation et démarrage du service Docker.
-3. Téléchargement du code source de Shuffle depuis GitHub.
+```bash
+sudo apt update && sudo apt install -y docker.io docker-compose
+```
+
+**Activation et démarrage du service Docker :**
+
+```bash
+sudo systemctl enable docker && sudo systemctl start docker
+```
+
+**Téléchargement du code source de Shuffle depuis GitHub :**
+
+```bash
+git clone https://github.com/Shuffle/Shuffle.git
+cd Shuffle
+```
 
 **Accès au Dashboard :**
 
@@ -215,6 +242,7 @@ https://192.168.223.130:3443
 2. *Flux de travail* → *Nouveau flux de travail*, nommé **"laboratoire d'automatisation SOC"**.
 3. Sélectionner un cas d'utilisation et valider.
 4. Ajouter un déclencheur **Webhook**, nommé "alertes wazuh", et copier son URL.
+5. Dans l'éditeur, cliquer sur *Modifier* et sauvegarder la configuration.
 
 **Intégration VirusTotal :**
 
@@ -228,15 +256,36 @@ https://192.168.223.130:3443
 sudo nano /var/ossec/etc/ossec.conf
 ```
 
-Ajout de l'URL du webhook Shuffle précédemment copiée dans la configuration, puis redémarrage de Wazuh.
+Ajout du bloc d'intégration suivant, avec l'URL du webhook Shuffle précédemment copiée :
+
+```xml
+<integration>
+    <name>shuffle</name>
+    <hook_url>http://192.168.223.130:3001/api/v1/hooks/webhook_744e179e-025a-471d-8458-897acf44b0fe</hook_url>
+    <rule_id>100002</rule_id>
+    <alert_format>json</alert_format>
+</integration>
+```
 
 > ⚠️ **Point d'attention :** respecter l'indentation du fichier de configuration (espaces, pas de tabulations).
+
+**Redémarrage de Wazuh :**
+
+```bash
+sudo systemctl restart wazuh-manager
+sudo systemctl status wazuh-manager
+```
 
 ## Chapitre 4 : Scénarios d'attaque et analyse des résultats
 
 ### 4.1 Lancement de l'attaque SMB Brute Force
 
 Depuis la machine Kali Linux (`192.168.223.131`), lancement d'une attaque SMB brute force ciblant Windows 10 (`192.168.223.128`), avec désactivation préalable du pare-feu Windows (pour les besoins du test).
+
+```bash
+echo "=== Lancement de l'attaque brute force SMB ==="
+hydra -L users.txt -P passwords.txt 192.168.223.128 smb -V -t 1
+```
 
 ### 4.2 Analyse des résultats
 
