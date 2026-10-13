@@ -1,6 +1,6 @@
 ---
 title: "Mise en place d'un SOC intelligent avec Wazuh + SOAR"
-date: 2026-10-13
+date: 2025-01-10
 categories: [SOC, Projet]
 tags: [wazuh, shuffle, soar, siem, active-response, mitre-attck, docker, brute-force, pfe]
 ---
@@ -10,7 +10,6 @@ tags: [wazuh, shuffle, soar, siem, active-response, mitre-attck, docker, brute-f
 > **Sous-titre :** Automatisation de détection et réponse aux incidents
 > **Auteur :** BERRAHAL Mohammed
 > **Type :** Projet de fin d'études (PFE)
-
 
 ## Résumé
 
