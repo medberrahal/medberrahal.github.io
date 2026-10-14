@@ -1,6 +1,6 @@
 # 👋 Welcome to Hex & Logs
 
-Hi, I'm **Hamza** – a cybersecurity enthusiast at the beginning of my journey into the world of security operations, threat hunting, and all things defense and offense.
+Hi, I'm **Mohammedberrahal** – a cybersecurity enthusiast at the beginning of my journey into the world of security operations, threat hunting, and all things defense and offense.
 
 ## 🎯 What I'm Learning
 
