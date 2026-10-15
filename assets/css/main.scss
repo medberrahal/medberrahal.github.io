@@ -51,4 +51,12 @@ h3.archive__subtitle {
 .archive__item-title {
   margin-top: 0 !important;
 }
-table td, table th { white-space: nowrap; } @media (max-width: 600px) { table { display: block; overflow-x: auto; } }
+table { 
+  display: block !important; 
+  width: 100% !important;
+  overflow-x: auto !important; 
+}
+
+table td, table th { 
+  white-space: nowrap !important; 
+}
