@@ -89,11 +89,11 @@ LocalAddress  LocalPort RemoteAddress  RemotePort OwningProcess
 
 | Host | Source | Sourcetype | Count |
 | ---  | --- | --- | --- |
-| 'ip-176-16-129-6' | `/opt/splunk/logs/windows_security.log` | `WinEventLog:Security` | 9679 |
-| 'ip-176-16-129-6' | `/opt/splunk/logs/windows_powershell_ops.log` | `WinEventLog:Microsoft-Windows-PowerShell/Operational` | 6096 |
-| 'ip-176-16-129-6' | `/opt/splunk/logs/windows_powershell.log` | `WinEventLog:Windows-PowerShell` | 5438 |
-| 'ip-176-16-129-6' | `/opt/splunk/logs/windows_system.log` | `WinEventLog:System` | 63 |
-| 'ip-176-16-129-6' | `/opt/splunk/logs/windows_application.log` | `WinEventLog:Application` | 23 |
+| `ip-176-16-129-6` | `/opt/splunk/logs/windows_security.log` | `WinEventLog:Security` | 9679 |
+| `ip-176-16-129-6` | `/opt/splunk/logs/windows_powershell_ops.log` | `WinEventLog:Microsoft-Windows-PowerShell/Operational` | 6096 |
+| `ip-176-16-129-6` | `/opt/splunk/logs/windows_powershell.log` | `WinEventLog:Windows-PowerShell` | 5438 |
+| `ip-176-16-129-6` | `/opt/splunk/logs/windows_system.log` | `WinEventLog:System` | 63 |
+| `ip-176-16-129-6` | `/opt/splunk/logs/windows_application.log` | `WinEventLog:Application` | 23 |
 
 La majorité des éléments utiles se trouvent dans `windows_powershell_ops.log`, `windows_powershell.log` et `windows_security.log`.
 
