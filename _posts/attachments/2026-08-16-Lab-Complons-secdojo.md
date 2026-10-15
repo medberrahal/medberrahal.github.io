@@ -1,4 +1,11 @@
 ---
+layout: single
+header:
+  overlay_image: /assets/images/banner-014.jpg
+  overlay_filter: 0.6
+toc: true
+toc_depth: 6
+toc_label: Table of Contents
 title: "Lab Complons : investigation DFIR d'une chaîne de cryptomining (Phishing → PowerShell → Mineur)"
 date: 2026-10-13
 categories: [DFIR]
@@ -81,7 +88,7 @@ LocalAddress  LocalPort RemoteAddress  RemotePort OwningProcess
 ### 1.2 Sources Splunk pertinentes
 
 | Host | Source | Sourcetype | Count |
-| --- | --- | --- | --- |
+| ---    | ---   | ---   | ---   |
 | ip-176-16-129-6 | `/opt/splunk/logs/windows_security.log` | `WinEventLog:Security` | 9679 |
 | ip-176-16-129-6 | `/opt/splunk/logs/windows_powershell_ops.log` | `WinEventLog:Microsoft-Windows-PowerShell/Operational` | 6096 |
 | ip-176-16-129-6 | `/opt/splunk/logs/windows_powershell.log` | `WinEventLog:Windows-PowerShell` | 5438 |
