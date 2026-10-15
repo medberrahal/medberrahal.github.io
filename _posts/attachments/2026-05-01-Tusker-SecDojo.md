@@ -19,16 +19,6 @@ tags: [dfir, splunk, spl, pgadmin, cve-2023-5002, command-injection, brute-force
 > **CVE exploitée :** CVE-2023-5002 — Command Injection dans pgAdmin < 7.7
 > **Résultat :** ✅ chaîne d'attaque complète reconstituée via Splunk, du brute force à la persistance C2
 
-## Table des matières
-
-1. [Sources de données disponibles](#1-sources-de-données-disponibles-q1)
-2. [Première attaque — Brute Force](#2-première-attaque--brute-force-q2-q3-q4-q5)
-3. [Exploitation CVE-2023-5002 — Command Injection](#3-exploitation-cve-2023-5002--command-injection-q6-q7-q8)
-4. [Framework C2 — Sliver](#4-framework-c2--sliver-q10)
-5. [Persistance — Cron Job](#5-persistance--cron-job-q12-q13)
-6. [Tableau récapitulatif des réponses](#6-tableau-récapitulatif-des-réponses)
-7. [Indicateurs de compromission (IOCs)](#7-indicateurs-de-compromission-iocs)
-8. [Recommandations de remédiation](#8-recommandations-de-remédiation)
 
 ## 1. Sources de données disponibles (Q1)
 
