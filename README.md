@@ -1,32 +1,29 @@
-# 👋 Welcome to Hex & Logs
+# 👋 Bienvenue sur Hex & Logs
 
-Hi, I'm **Mohammedberrahal** – a cybersecurity enthusiast at the beginning of my journey into the world of security operations, threat hunting, and all things defense and offense.
+Bonjour, je suis **Mohammedberrahal** – passionné de cybersécurité au début de mon parcours dans l'univers des opérations de sécurité, de la chasse aux menaces (*threat hunting*), ainsi que de la défense et de l'attaque informatique.
 
-## 🎯 What I'm Learning
+## 🎯 Ce que j'apprends
 
-I'm currently exploring:
+J'explore actuellement :
 
-- **SOC analysis** – detecting, analyzing, and responding to security incidents  
-- **Blue team operations** – defensive techniques, log analysis, and threat detection  
-- **Red team & penetration testing** – understanding attack techniques to build better defenses  
-- **Digital forensics** – investigating incidents and reconstructing what happened  
-- **Threat hunting** – proactively searching for threats using logs and SIEM-style tools  
+- **L'analyse SOC** – détection, analyse et réponse aux incidents de sécurité  
+- **Les opérations Blue Team** – techniques défensives, analyse de logs et détection des menaces  
+- **Le Red Team & les tests d'intrusion** – compréhension des techniques d'attaque pour mieux renforcer les défenses  
+- **L'investigation numérique (*Digital Forensics*)** – enquête sur les incidents et reconstruction des événements  
+- **La chasse aux menaces (*Threat Hunting*)** – recherche proactive des menaces à l'aide des logs et d'outils de type SIEM  
 
-## 🛠️ What I'm Building
+## 🛠️ Ce que je développe
 
-This repository powers my GitHub Pages site and acts as my learning lab. Here I plan to share:
+Ce dépôt alimente mon site GitHub Pages et sert de laboratoire d'apprentissage. J'y partage :
 
-- Small security projects and hands-on labs  
-- Write-ups from challenges and practice scenarios  
-- Notes on tools, techniques, and concepts I discover along the way  
-- My progress as I grow in the cybersecurity field  
+- Des petits projets de sécurité et des travaux pratiques (*labs*)  
+- Des comptes-rendus (*write-ups*) de défis et de scénarios d'entraînement  
+- Mes notes sur les outils, techniques et concepts que je découvre au fil de mon apprentissage  
+- Ma progression au sein du domaine de la cybersécurité  
 
-## 🤝 Let's Connect
+## 🤝 Échangeons ensemble
 
-I'm here to learn, share knowledge, and meet people who are passionate about cybersecurity.  
-If you’re interested in SOC work, blue/red teaming, forensics, or threat hunting, I’d be happy to connect, exchange ideas, and get inspired by your experience.
+Je suis ici pour apprendre, partager mes connaissances et rencontrer des personnes passionnées par la cybersécurité.  
+Si vous vous intéressez au travail en SOC, au Blue/Red Teaming, à l'investigation numérique ou au Threat Hunting, ce serait un plaisir de prendre contact, d'échanger des idées et d'apprendre de votre expérience.
 
-> I read **logs** so attackers don't write the **story**.
-
-
-
+> *Je lis les **logs** pour éviter que les attaquants n'écrivent l'**histoire**.*
