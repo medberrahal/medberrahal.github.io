@@ -11,7 +11,7 @@ date: 2026-10-21
 categories: [Web, Cybersécurité]
 tags: [opencode, cve-2026-22812, rce, command-execution, api, secdojo, ctf, pentest]
 ---
-**Lab OpenCode : **`validation de CVE-2026-22812` 
+Lab OpenCode : `validation de CVE-2026-22812` 
 > **Cible déclarée :** `176.16.163.253`  **Interface observée :** `http://176.16.163.253:4096/`  **Contexte :** lab autorisé; la preuve d’exécution a été limitée à `id`, suivie de la recherche et de la lecture du fichier de flag.  **Résultat :** l’API OpenCode a exécuté une commande sous `codesource` et le fichier `/home/local.txt` a révélé le flag.
 
 > **Précaution de publication :** l’identifiant de session API a été omis. Les réponses JSON sont résumées pour ne pas exposer inutilement les identifiants de messages et de session.
