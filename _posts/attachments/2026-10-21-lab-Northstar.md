@@ -351,9 +351,7 @@ La sortie finale contenait le flag demandé. Le même flag apparaissait deux foi
 Le test a confirmé qu’une requête non authentifiée pouvait exploiter le flux de mise à jour/hydratation du composant Livewire exposé pour exécuter une commande sous le compte `www-data`, puis lire `/home/local.txt`. Le flag a donc été récupéré sans accès root. L’indication de version Livewire restait ambiguë entre 3.6.3 et 3.6.4, mais le succès du payload prouve l’exploitabilité du scénario testé; il ne faut pas généraliser cette observation à tous les déploiements Livewire.
 
 Pour un système réel, la mesure principale est de mettre Livewire à jour vers **3.6.4 ou une version ultérieure**, puis de vérifier que les dépendances réellement déployées sont corrigées [1][2]. L’avis GitHub indique qu’aucun contournement n’est connu. Il faut également retirer toute donnée sensible exposée par erreur, éviter d’inclure les jetons de session/CSRF dans les rapports et vérifier les journaux HTTP/Laravel ainsi que l’intégrité de l’environnement. Ces actions de remédiation sont séparées de la collecte du flag du lab.
-
 ## Références
-
 [1]: https://nvd.nist.gov/vuln/detail/CVE-2025-54068 "NVD CVE-2025-54068"  
 [2]: https://github.com/livewire/livewire/security/advisories/GHSA-29cq-5w36-x7w3 "Livewire security advisory GHSA-29cq-5w36-x7w3"  
 [3]: https://github.com/synacktiv/Livepyre "Synacktiv Livepyre repository and usage"  
