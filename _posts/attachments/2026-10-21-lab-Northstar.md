@@ -6,10 +6,10 @@ header:
 toc: true
 toc_depth: 6
 toc_label: Table of Contents
-title: "Lab Northstar : validation de CVE-2025-54068 et récupération du flag (RCE Livewire)"
+title: "Lab Northstar : RCE non authentifiée via Livewire (CVE-2025-54068)"
 date: 2026-10-21
-categories: [Web, Cybersécurité]
-tags: [livewire, laravel, cve-2025-54068, rce, command-execution, secdojo, ctf, pentest]
+categories: [Pentest, Exploitation]
+tags: [livewire, laravel, cve-2025-54068, rce, command-execution, pre-auth, livepyre, secdojo, ctf, pentest]
 ---
 # Rapport de validation — CVE-2025-54068 sur Northstar
 
