@@ -256,7 +256,21 @@ HTTP 200
 
 **Pourquoi cette étape :** transformer l'accès API en accès interactif réel sur l'interface, via un compte créé légitimement grâce au secret rejoué.
 
-## 11. Étape 8 — Ouvrir le terminal web et lire le flag
+## 11. Étape 8 — Connexion à l'interface web et ouverture du terminal
+
+Après la création du compte `aka`, l'interface Nginx UI a été ouverte dans le navigateur à l'adresse suivante :
+
+```text
+http://176.16.164.232:18082/
+```
+
+Une fois connecté avec le compte de lab, il fallait sélectionner **Terminal** dans le menu latéral gauche. La capture ci-dessous montre l'interface sur `http://176.16.164.232:18082/#/terminal`, avec la rubrique Terminal sélectionnée et les onglets de terminal visibles.
+
+<p align="center"><a href="/assets/images/banan1.png"><img src="/assets/images/banan1.png"></a></p>
+
+Le grand panneau noir correspond au terminal intégré. Il faut cliquer à l'intérieur de ce panneau pour lui donner le focus, puis saisir les commandes à l'invite qui apparaît. Les commandes doivent être tapées dans ce panneau, pas dans le terminal local Kali. Si le panneau Assistant affiche une erreur de connexion à OpenAI, cela concerne uniquement l'assistant intégré ; fermer ou masquer ce panneau ne ferme pas le terminal.
+
+## 12. Étape 9 — Ouvrir le terminal web et lire le flag
 
 Connexion à l'interface :
 
