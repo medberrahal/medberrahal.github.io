@@ -6,6 +6,11 @@ header:
 toc: true
 toc_depth: 6
 toc_label: Table of Contents
+title: "Hollowford CTF : Bleeding Llama — exploitation de CVE-2026-7482 sur Ollama 0.17.0"
+date: 2026-10-29
+categories: [CTF, Exploit]
+tags: [ctf, ollama, cve-2026-7482, bleeding-llama, heap-oob-read, gguf, ...]
+---
 # Rapport CVE-2026-7482 — Hollowford CTF
 ## Bleeding Llama : Exploitation complète d'Ollama 0.17.0
 
