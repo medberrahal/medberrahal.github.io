@@ -12,32 +12,12 @@ categories: [CTF, Exploit]
 tags: [ctf, ollama, cve-2026-7482, bleeding-llama, heap-oob-read, gguf, ...]
 ---
 # Rapport CVE-2026-7482 — Hollowford CTF
-## Bleeding Llama : Exploitation complète d'Ollama 0.17.0
-
-**Auteur :** BERRAHAL MOHAMMED 
-**Date :** 29 octobre 2026  
-**Flag :** `flag_7a2122eb_ba8f_4745_ba4c_f3861ee5bd4d`
+> ## Bleeding Llama : Exploitation complète d'Ollama 0.17.0 
+> **Date :** 29 octobre 2026  
+> **Flag :** `flag_7a2122eb_ba8f_4745_ba4c_f3861ee5bd4d`
 
 ---
 
-## Table des matières
-
-1. [Objectif et résultat](#1-objectif-et-résultat)
-2. [Contexte CVE-2026-7482](#2-contexte-cve-2026-7482)
-3. [Chaîne d'exploitation (vue d'ensemble)](#3-chaîne-dexploitation-vue-densemble)
-4. [Étape 1 — Reconnaissance](#4-étape-1--reconnaissance)
-5. [Étape 2 — Compréhension du vecteur d'attaque](#5-étape-2--compréhension-du-vecteur-dattaque)
-6. [Étape 3 — Génération du GGUF malveillant](#6-étape-3--génération-du-gguf-malveillant)
-7. [Étape 4 — Upload du blob](#7-étape-4--upload-du-blob)
-8. [Étape 5 — Création du modèle et déclenchement du OOB read](#8-étape-5--création-du-modèle-et-déclenchement-du-oob-read)
-9. [Étape 6 — Mise en place du registry récepteur](#9-étape-6--mise-en-place-du-registry-récepteur-sur-kali)
-10. [Étape 7 — Exfiltration via /api/push](#10-étape-7--exfiltration-via-apipush)
-11. [Étape 8 — Décodage et extraction du flag](#11-étape-8--décodage-et-extraction-du-flag)
-12. [Erreurs rencontrées et résolutions](#12-erreurs-rencontrées-et-résolutions)
-13. [Conclusion](#13-conclusion)
-14. [Références](#14-références)
-
----
 
 ## 1. Objectif et résultat
 
