@@ -12,23 +12,30 @@ categories: [CTF, Pentest]
 tags: [ctf, asterix, aviation, eurocontrol, header-injection, x-forwarded-for, bypass-403, nodejs, express, websocket, socket-io, ip-spoofing, cwe-346, secdojo, linux]
 ---
 
-## Contexte du challenge
+# Rapport de Pentest CTF — "LeGaulois"
+
+## ASTERIX Aviation Security | SecDojo |
+
+---
+
+## Informations générales
 
 | Champ | Valeur |
-|---|---|
-| **Plateforme** | SecDojo |
+| --- | --- |
 | **Challenge** | LeGaulois |
 | **Catégorie** | Linux / Aerospace / ASTERIX / Aviation |
-| **Difficulté** | Basic |
-| **Points** | 100 pts |
 | **Date** | 03 novembre 2026 |
-| **Flag** | `flag_060c5011_e00b_4609_b5a1_550ff23611ac` |
+| **Auteur du rapport** | Berrahal Mohammed |
+| **Flag obtenu** | `flag_060c5011_e00b_4609_b5a1_550ff23611ac` |
+
+---
+
+## Objectif du challenge
+
+Tester la sécurité d'une implémentation ASTERIX simulant une communication entre une **tour radar** et un **afficheur de contrôle aérien**, identifier les vulnérabilités, et démontrer leur impact en faisant **disparaître un aéronef inconnu** de l'afficheur pour obtenir le flag.
 
 > **ASTERIX** (*Application of Surveillance Techniques for En-Route Inventory and Experimental*) est le protocole standard Eurocontrol utilisé dans les systèmes de contrôle du trafic aérien (ATC) pour transmettre les données radar entre les capteurs et les afficheurs de contrôleurs.
 
-### Énoncé
-
-> *Your mission is to test the security of an ASTERIX implementation for a communication between a tower radar and a displayer, identify the vulnerabilities and demonstrate their impact of exploitation then as a proof of your exploitations, you need to make an unknown aircraft disappear from the displayer to get your flag.*
 
 ### Infrastructure cible
 
