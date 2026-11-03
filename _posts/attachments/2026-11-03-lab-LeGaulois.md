@@ -12,10 +12,8 @@ categories: [CTF, Pentest]
 tags: [ctf, asterix, aviation, eurocontrol, header-injection, x-forwarded-for, bypass-403, nodejs, express, websocket, socket-io, ip-spoofing, cwe-346, secdojo, linux]
 ---
 
-# Rapport de Pentest CTF — "LeGaulois"
-
+# Pentest CTF — "LeGaulois"
 ## ASTERIX Aviation Security | SecDojo |
-
 ---
 
 ## Informations générales
