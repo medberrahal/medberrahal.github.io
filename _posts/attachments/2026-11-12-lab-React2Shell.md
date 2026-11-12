@@ -11,9 +11,7 @@ date: 2026-11-12
 categories: [CTF, Exploit]
 tags: [ctf, nextjs, react, rsc, cve-2025-55182, react2shell, deserialization, rce, metasploit, reverse-shell, sudo, privesc, node-js, kali, nmap]
 ---
-
-**Auteur :** Berrahal Mohammed  
-**Date :** 12 novembre 2026  
+  
 **Type :** Pentest / Lab CyberLearn — Niveau Basic  
 **CVE :** CVE-2025-55182 — CVSS 10.0 (Critique)  
 **Cible :** `176.16.177.229:3000` — Application Next.js (TaskFlow)
