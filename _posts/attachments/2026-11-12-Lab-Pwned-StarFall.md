@@ -6,7 +6,7 @@ header:
 toc: true
 toc_depth: 6
 toc_label: Table of Contents
-title: "Lab StarFall : injection Java dans StreamSQL de Yamcs (CVE-2026-55511) — RCE via compilateur d'agrégats Janino"
+title: "Lab Pwned-StarFall : injection Java dans StreamSQL de Yamcs (CVE-2026-55511) — RCE via compilateur d'agrégats Janino"
 date: 2026-11-12
 categories: [CTF, Exploit]
 tags: [ctf, yamcs, cve-2026-55511, streamsql, java-injection, janino, rce, ics-ot, space, kali, nmap, gobuster, bucket, tse, cfdp, mitre-attck]
