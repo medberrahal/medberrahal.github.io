@@ -332,7 +332,7 @@ curl -s -X POST \
 ```
 
 **Réponse :**
-
+<p align="center"><a href="/assets/images/nan.png"><img src="/assets/images/nan.png"></a></p>
 ```json
 {"jsonrpc":"2.0","id":5,
   "result":{"content":[{"type":"text",
